@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ooRgNqSZJ2tUJTFqjM24gGo/fvoESAvOJN8UzVVfRTARnwANMDfTBtE5/RUQtWTebCDJoecw+00RfZ10UzFzyg==",
+  "dgSpecHash": "8JLcDyVc15OGeitnh110UtoFXMUeAdKOggXManaNkVEojBMU+XTekT9bqJuKJ3AiTeqgBYfLbn5NaIygBHMz3A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Triscal\\source\\repos\\Swagger-Versioning\\src\\Core.API.csproj",
+  "projectFilePath": "C:\\Source\\Core.API\\src\\Core.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Triscal\\.nuget\\packages\\apicore\\2.1.0\\apicore.2.1.0.nupkg.sha512",
     "C:\\Users\\Triscal\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",

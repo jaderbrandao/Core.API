@@ -1,8 +1,7 @@
 ﻿using APICore.Extensions;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Swagger_Versioning.Extension
+namespace Core.API.Extension
 {
     public static class DependencyInjectionExtension
     {

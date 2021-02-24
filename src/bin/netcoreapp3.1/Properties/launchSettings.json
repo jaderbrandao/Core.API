@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Swagger_Versioning": {
+    "Core.API": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",

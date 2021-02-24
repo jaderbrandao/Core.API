@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using static Swagger_Versioning.Controllers.v2.WeatherForecastController;
+using static Core.API.Controllers.v2.WeatherForecastController;
 
-namespace Swagger_Versioning.Controllers.v1
+namespace Core.API.Controllers.v1
 {
     [ApiController]
     [ApiVersion("1.0", Deprecated =true)]

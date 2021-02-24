@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using Core.API.Autorizacao.Response;
+using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
@@ -6,7 +7,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Swagger_Versioning.Core.API
+namespace Core.API.Autorizacao
 {
     public class AutorizacaoHandler : AuthorizationHandler<UserRequirement>
     {
@@ -54,9 +55,4 @@ namespace Swagger_Versioning.Core.API
     }
 
     public class UserRequirement : IAuthorizationRequirement { }
-
-    public class AutorizationResponse
-    {
-        public string Message { get; set; }
-    }
 }

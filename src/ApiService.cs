@@ -1,4 +1,4 @@
-﻿namespace Swagger_Versioning
+﻿namespace Core.API
 {
     public class ApiService : IApiService
     {

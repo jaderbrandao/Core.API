@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Triscal\\source\\repos\\Swagger-Versioning\\src\\Core.API.csproj": {}
+    "C:\\Source\\Core.API\\src\\Core.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Triscal\\source\\repos\\Swagger-Versioning\\src\\Core.API.csproj": {
+    "C:\\Source\\Core.API\\src\\Core.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Triscal\\source\\repos\\Swagger-Versioning\\src\\Core.API.csproj",
+        "projectUniqueName": "C:\\Source\\Core.API\\src\\Core.API.csproj",
         "projectName": "Core.API",
-        "projectPath": "C:\\Users\\Triscal\\source\\repos\\Swagger-Versioning\\src\\Core.API.csproj",
+        "projectPath": "C:\\Source\\Core.API\\src\\Core.API.csproj",
         "packagesPath": "C:\\Users\\Triscal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Triscal\\source\\repos\\Swagger-Versioning\\src\\obj\\",
+        "outputPath": "C:\\Source\\Core.API\\src\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Triscal\\AppData\\Roaming\\NuGet\\NuGet.Config",

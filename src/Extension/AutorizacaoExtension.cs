@@ -1,10 +1,9 @@
-﻿using APICore.Extensions;
+﻿using Core.API.Autorizacao;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.DependencyInjection;
-using Swagger_Versioning.Core.API;
 
-namespace Swagger_Versioning.Extension
+namespace Core.API.Extension
 {
     public static class AutorizacaoExtension
     {

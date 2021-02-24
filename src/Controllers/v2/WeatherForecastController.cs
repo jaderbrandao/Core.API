@@ -3,7 +3,7 @@ using System.Net;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Swagger_Versioning.Controllers.v2
+namespace Core.API.Controllers.v2
 {
     [ApiController]
     [ApiVersion("2.0")]
