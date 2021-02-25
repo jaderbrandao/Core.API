@@ -1,41 +1,32 @@
-﻿using Core.API.Autorizacao.Response;
-using Core.API.Extension;
-using MediatR;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Core.API.Autorizacao
 {
-    public class AutorizacaoHandler : AuthorizationHandler<UserRequirement>
+    /// <summary>
+    /// Base class for authorization handlers that need to be called for a specific requirement type.
+    /// </summary>
+    /// <typeparam name="TRequirement">The type of the requirement to handle.</typeparam>
+    public abstract class AutorizacaoHandler<TRequirement> : IAutorizacaoHandler where TRequirement : IAuthorizationRequirement
     {
-        private readonly IMediator _mediator;
-        private readonly IHttpContextAccessor _httpContextAccessor;
-
-        public AutorizacaoHandler(IHttpContextAccessor httpContextAccessor, IMediator mediator)
+        /// <summary>
+        /// Makes a decision if authorization is allowed.
+        /// </summary>
+        /// <param name="context">The authorization context.</param>
+        public virtual async Task HandleAsync(AuthorizationHandlerContext context)
         {
-            _httpContextAccessor = httpContextAccessor;
-            _mediator = mediator;
+            foreach (var req in context.Requirements.OfType<TRequirement>())
+            {
+                await HandleRequirementAsync(context, req);
+            }
         }
 
-        protected override async Task HandleRequirementAsync(AuthorizationHandlerContext context, UserRequirement requirement)
-        {
-            //Get Validation Service
-            var access = await Task.FromResult(false);
-                      
-
-            if (access)
-            {
-                context.Succeed(requirement);
-            }
-            else
-            {
-                context.Fail();
-                await _httpContextAccessor.HttpContext.CreateResponseAsync(new AutorizationResponse() { Message = "User Invalid." });
-            }
-
-        }
+        /// <summary>
+        /// Makes a decision if authorization is allowed based on a specific requirement.
+        /// </summary>
+        /// <param name="context">The authorization context.</param>
+        /// <param name="requirement">The requirement to evaluate.</param>
+        protected abstract Task HandleRequirementAsync(AuthorizationHandlerContext context, TRequirement requirement);
     }
-
-    public class UserRequirement : IAuthorizationRequirement { }
 }

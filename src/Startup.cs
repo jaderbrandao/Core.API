@@ -1,6 +1,5 @@
 using APICore.Extensions;
 using Core.API.Extension;
-using MediatR.Behaviors.Authorization.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
@@ -25,12 +24,8 @@ namespace Core.API
             services.AddControllers();
             services.AddApiConfiguration(Configuration);
             services.AddSwaggerConfiguration();
-            services.AddDependencyInjection(typeof(IService));
             services.RegisterDependencyInjection();
             services.ResolveAuthorization();
-
-            //Mediatr Authorization
-            services.AddMediatorAuthorization();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -53,7 +48,6 @@ namespace Core.API
             });
 
             app.UseSwaggerConfiguration(provider);
-
         }
     }
 }

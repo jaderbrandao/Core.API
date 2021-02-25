@@ -17,8 +17,7 @@ namespace Core.API.Extension
                 });
             });
 
-            service.AddScoped<IAuthorizationHandler, AutorizacaoHandler>();
-            service.AddMediatR(typeof(AutorizacaoHandler));
+            service.AddHandlers(typeof(IAuthorizationHandler));
             service.AddHttpContextAccessor();
         }
     }

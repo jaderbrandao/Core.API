@@ -4,5 +4,24 @@
         <name>Core.API</name>
     </assembly>
     <members>
+        <member name="T:Core.API.Autorizacao.AutorizacaoHandler`1">
+            <summary>
+            Base class for authorization handlers that need to be called for a specific requirement type.
+            </summary>
+            <typeparam name="TRequirement">The type of the requirement to handle.</typeparam>
+        </member>
+        <member name="M:Core.API.Autorizacao.AutorizacaoHandler`1.HandleAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext)">
+            <summary>
+            Makes a decision if authorization is allowed.
+            </summary>
+            <param name="context">The authorization context.</param>
+        </member>
+        <member name="M:Core.API.Autorizacao.AutorizacaoHandler`1.HandleRequirementAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,`0)">
+            <summary>
+            Makes a decision if authorization is allowed based on a specific requirement.
+            </summary>
+            <param name="context">The authorization context.</param>
+            <param name="requirement">The requirement to evaluate.</param>
+        </member>
     </members>
 </doc>
