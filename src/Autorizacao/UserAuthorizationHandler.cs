@@ -42,8 +42,7 @@ namespace Core.API.Autorizacao
             else
             {
                 context.Fail();
-               // await _httpContextAccessor.HttpContext.CreateResponseAsync(new AutorizationResponse() { Message = "User Invalid." });
-               await _httpContextAccessor.HttpContext.CreateResponseMessageAsync();
+                await _httpContextAccessor.HttpContext.CreateResponseMessageAsync();
             }
 
         }
