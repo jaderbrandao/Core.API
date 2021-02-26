@@ -23,8 +23,7 @@ namespace Core.API.Extension
                 if (classe == null)
                     continue;
 
-                service.AddScoped(interfaceKey, classe);
-                //service.AddMediatR(classe);
+                service.AddSingleton(interfaceKey, classe);
             }
         }
     }
