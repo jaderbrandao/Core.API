@@ -24,7 +24,7 @@ namespace Core.API.Extension
                     continue;
 
                 service.AddScoped(interfaceKey, classe);
-                service.AddMediatR(classe);
+                //service.AddMediatR(classe);
             }
         }
     }

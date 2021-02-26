@@ -23,5 +23,20 @@
             <param name="context">The authorization context.</param>
             <param name="requirement">The requirement to evaluate.</param>
         </member>
+        <member name="M:Core.API.Extension.HttpRequestExtensions.GetRawBodyStringAsync(Microsoft.AspNetCore.Http.HttpRequest,System.Text.Encoding)">
+            <summary>
+            Retrieve the raw body as a string from the Request.Body stream
+            </summary>
+            <param name="request">Request instance to apply to</param>
+            <param name="encoding">Optional - Encoding, defaults to UTF8</param>
+            <returns></returns>
+        </member>
+        <member name="M:Core.API.Extension.HttpRequestExtensions.GetRawBodyBytesAsync(Microsoft.AspNetCore.Http.HttpRequest)">
+            <summary>
+            Retrieves the raw body as a byte array from the Request.Body stream
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
     </members>
 </doc>

@@ -2,6 +2,7 @@
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.DependencyInjection;
+using System.Reflection;
 
 namespace Core.API.Extension
 {
@@ -19,6 +20,7 @@ namespace Core.API.Extension
 
             service.AddHandlers(typeof(IAuthorizationHandler));
             service.AddHttpContextAccessor();
+            service.AddMediatR(Assembly.GetExecutingAssembly());
         }
     }
 }
