@@ -1,0 +1,9 @@
+C:\Source\Core.API\Abstractions\bin\Debug\netstandard2.1\Abstractions.deps.json
+C:\Source\Core.API\Abstractions\bin\Debug\netstandard2.1\Abstractions.dll
+C:\Source\Core.API\Abstractions\bin\Debug\netstandard2.1\Abstractions.pdb
+C:\Source\Core.API\Abstractions\obj\Debug\netstandard2.1\Abstractions.AssemblyInfoInputs.cache
+C:\Source\Core.API\Abstractions\obj\Debug\netstandard2.1\Abstractions.AssemblyInfo.cs
+C:\Source\Core.API\Abstractions\obj\Debug\netstandard2.1\Abstractions.csproj.CoreCompileInputs.cache
+C:\Source\Core.API\Abstractions\obj\Debug\netstandard2.1\Abstractions.dll
+C:\Source\Core.API\Abstractions\obj\Debug\netstandard2.1\Abstractions.pdb
+C:\Source\Core.API\Abstractions\obj\Debug\netstandard2.1\Abstractions.csprojAssemblyReference.cache

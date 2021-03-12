@@ -4,6 +4,86 @@
     "C:\\Source\\Core.API\\src\\Core.API.csproj": {}
   },
   "projects": {
+    "C:\\Source\\Core.API\\Abstractions\\Abstractions.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Source\\Core.API\\Abstractions\\Abstractions.csproj",
+        "projectName": "Abstractions",
+        "projectPath": "C:\\Source\\Core.API\\Abstractions\\Abstractions.csproj",
+        "packagesPath": "C:\\Users\\Triscal\\.nuget\\packages\\",
+        "outputPath": "C:\\Source\\Core.API\\Abstractions\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Triscal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "http://proget.icatuseguros.com.br/nuget/Icatu": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://devops.icatuseguros.com.br/IcatuCollection/_packaging/Corporativo/nuget/v3/index.json": {},
+          "https://devops.icatuseguros.com.br/IcatuCollection/_packaging/Previdencia/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.AspNetCore.Authorization": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Routing": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Source\\Core.API\\src\\Core.API.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -21,12 +101,18 @@
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "http://proget.icatuseguros.com.br/nuget/Icatu": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://devops.icatuseguros.com.br/IcatuCollection/_packaging/Corporativo/nuget/v3/index.json": {},
+          "https://devops.icatuseguros.com.br/IcatuCollection/_packaging/Previdencia/nuget/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Source\\Core.API\\Abstractions\\Abstractions.csproj": {
+                "projectPath": "C:\\Source\\Core.API\\Abstractions\\Abstractions.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -41,42 +127,6 @@
             "APICore": {
               "target": "Package",
               "version": "[2.1.0, )"
-            },
-            "MediatR": {
-              "target": "Package",
-              "version": "[9.0.0, )"
-            },
-            "MediatR.Behaviors.Authorization": {
-              "target": "Package",
-              "version": "[1.1.0, )"
-            },
-            "Microsoft.AspNet.WebApi.Core": {
-              "target": "Package",
-              "version": "[5.2.7, )"
-            },
-            "Microsoft.AspNetCore.Mvc.Abstractions": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
-            "Microsoft.AspNetCore.Mvc.Formatters.Json": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
-            "Microsoft.AspNetCore.Mvc.Versioning": {
-              "target": "Package",
-              "version": "[4.2.0, )"
-            },
-            "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer": {
-              "target": "Package",
-              "version": "[4.2.0, )"
-            },
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[12.0.3, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[5.6.3, )"
             }
           },
           "imports": [

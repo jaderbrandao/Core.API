@@ -1,5 +1,6 @@
+using Abstractions.Authorization;
+using Abstractions.IoC.Extensions;
 using APICore.Extensions;
-using Core.API.Extension;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
