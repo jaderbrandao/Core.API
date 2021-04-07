@@ -1,5 +1,6 @@
 using Abstractions.Authorization;
 using Abstractions.IoC.Extensions;
+using Abstractions.Middlewares;
 using APICore.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -49,6 +50,13 @@ namespace Core.API
             });
 
             app.UseSwaggerConfiguration(provider);
+
+            app.Use(async (context, next) =>
+            {
+                var errorHandlingMiddleware = new ErrorMiddleware(context, next);
+
+                await errorHandlingMiddleware.Invoke();
+            });
         }
     }
 }
